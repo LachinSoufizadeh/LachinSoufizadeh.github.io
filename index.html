@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lachin Soufizadeh Balaneji, PhD researcher at the University of Edinburgh</title>
+  <meta name="description" content="Lachin Soufizadeh Balaneji is a PhD researcher in the UKRI AI Centre for Doctoral Training in Biomedical Innovation at the University of Edinburgh, using interpretable machine learning to decode fear behaviour and SYNGAP1 genotype from rat EEG and LFP recordings.">
+  <link rel="canonical" href="https://lachinsoufizadeh.github.io/">
+  <meta name="author" content="Lachin Soufizadeh Balaneji">
+  <meta name="theme-color" content="#f7f9f5">
+  <meta name="color-scheme" content="light">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Lachin Soufizadeh Balaneji">
+  <meta property="og:description" content="PhD researcher at the University of Edinburgh, using machine learning to read behaviour and genotype from brain recordings.">
+  <meta property="og:url" content="https://lachinsoufizadeh.github.io/">
+  <meta property="og:image" content="https://lachinsoufizadeh.github.io/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Lachin Soufizadeh Balaneji, PhD researcher, with an illustrated three-channel brain recording.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/literata-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="/assets/js/recording.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Lachin Soufizadeh Balaneji",
+    "alternateName": "Lachin Soufizadeh",
+    "url": "https://lachinsoufizadeh.github.io/",
+    "image": "https://lachinsoufizadeh.github.io/assets/img/lachin-800.jpg",
+    "jobTitle": "PhD researcher",
+    "email": "mailto:s2858559@ed.ac.uk",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Edinburgh" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Tabriz" },
+    "knowsAbout": ["Machine learning", "EEG", "Local field potentials", "Signal processing", "Neuroscience"],
+    "sameAs": [
+      "https://www.linkedin.com/in/lachin-soufizadeh-bb8ab818a/",
+      "https://github.com/LachinSoufizadeh"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="site-nav wrap" aria-label="Sections">
+      <ul>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#background">Background</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="name">
+      <div class="hero-text">
+        <h1 id="name"><span>Lachin</span> <span>Soufizadeh</span></h1>
+        <p class="lead">I use machine learning to read behaviour and genotype from brain recordings.</p>
+        <p class="affiliation">PhD researcher in the <a href="https://ai4bi-cdt.ed.ac.uk/">UKRI AI Centre for Doctoral Training in Biomedical Innovation</a> at the University of Edinburgh, based in Peter Kind’s lab at the <a href="https://www.sidb.org.uk/">Simons Initiative for the Developing Brain</a>.</p>
+        <ul class="links">
+          <li><a href="mailto:s2858559@ed.ac.uk">Email</a></li>
+          <li><a href="https://www.linkedin.com/in/lachin-soufizadeh-bb8ab818a/">LinkedIn</a></li>
+          <li><a href="https://github.com/LachinSoufizadeh">GitHub</a></li>
+        </ul>
+      </div>
+      <figure class="portrait">
+        <picture>
+          <source type="image/webp" srcset="/assets/img/lachin-400.webp 400w, /assets/img/lachin-800.webp 800w" sizes="(max-width: 40rem) 8.5rem, (min-width: 76rem) 17.5rem, 23vw">
+          <img src="/assets/img/lachin-400.jpg" srcset="/assets/img/lachin-400.jpg 400w, /assets/img/lachin-800.jpg 800w" sizes="(max-width: 40rem) 8.5rem, (min-width: 76rem) 17.5rem, 23vw" width="400" height="500" alt="Lachin Soufizadeh, smiling, in a light blue shirt.">
+        </picture>
+      </figure>
+    </section>
+
+    <figure class="recording wrap">
+      <div class="recording-plot" data-recording></div>
+      <figcaption>
+        <p class="recording-caption" data-recording-caption aria-live="polite"></p>
+        <div class="view-switch" role="group" aria-label="Recording view">
+          <button type="button" data-view="regions" aria-pressed="true">Three regions</button>
+          <button type="button" data-view="bands" aria-pressed="false">Frequency bands</button>
+        </div>
+      </figcaption>
+    </figure>
+
+    <section class="section wrap" id="research" aria-labelledby="research-title">
+      <h2 id="research-title">Research</h2>
+      <div class="section-body">
+        <p>Losing one working copy of the <i>SYNGAP1</i> gene is a common genetic cause of intellectual disability, and it often comes with autism and epilepsy. In <i>Syngap</i><sup>+/Δ-GAP</sup> rats it also shows up as a marked deficit in fear extinction: a learned fear that should fade, persists.</p>
+        <p>My PhD asks what that looks like in the brain. I work with EEG and local field potential (LFP) recordings from the medial prefrontal cortex, amygdala and olfactory bulb, made while rats go through fear conditioning. I turn the signals into features a model can learn from (spectral power, signal complexity and connectivity between regions), train interpretable classifiers, and use SHAP to see which regions, frequency bands and connections drive each prediction.</p>
+        <p>The aim is not only a biomarker. I want to understand how the fear circuit is organised, and what changes in it when <i>SYNGAP1</i> is haploinsufficient.</p>
+
+        <h3>Findings so far</h3>
+        <ul class="findings">
+          <li>Freezing can be decoded from 5-second windows of brain activity, with 96% accuracy on held-out data in <i>Syngap</i><sup>+/Δ-GAP</sup> rats and 94% in wild-type rats.</li>
+          <li>Freezing looks different in the brain of each genotype. In wild-type rats the model draws on both oscillatory power and signal complexity, while in <i>Syngap</i><sup>+/Δ-GAP</sup> rats the strongest markers are complexity features, which suggests a weaker version of the usual oscillatory signature of freezing.</li>
+          <li>Genotype can be predicted for rats the model has never seen, with a balanced accuracy of 0.86 during habituation and 0.75 during fear recall.</li>
+        </ul>
+        <p class="source">From my posters at the <a href="https://ai4bi-cdt.ed.ac.uk/sites/default/files/2026-06/Machine%20Learning-Based%20Neural%20Biomarkers%20of%20Freezing%20Behaviour%20-%20Lachin%20Soufizadeh.pdf">Machine Intelligence for Health conference</a> and <a href="https://neurips.cc/virtual/2026/179485">WiML at NeurIPS 2026</a>.</p>
+
+        <p>I’m supervised by <a href="https://sidb.org.uk/peter-kind/">Peter Kind</a>, <a href="https://sidb.org.uk/peter-kind/paul-rignanese/">Paul Rignanese</a> and Thomas Watson at the Simons Initiative for the Developing Brain, and <a href="https://homepages.inf.ed.ac.uk/aonken/">Arno Onken</a> in the School of Informatics.</p>
+
+        <h3>Before Edinburgh</h3>
+        <p>For my MSc at the University of Tabriz, supervised by Yashar Sarbaz and Saeed Meshgini, I built an EEG pipeline that tells people with major depressive disorder apart from healthy controls. It cleans the signal with artifact subspace reconstruction and ICA, then uses wavelet sub-band, entropy and fractal-dimension features. It reached up to 96.0% accuracy with eyes open and 94.3% with eyes closed under 10-fold cross-validation, with delta and gamma activity over channels O2 and P3 carrying the most information.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title">Publications and posters</h2>
+      <div class="section-body is-listing">
+        <ol class="entries">
+          <li class="entry">
+            <span class="when">2026</span>
+            <div>
+              <p class="title"><a href="https://neurips.cc/virtual/2026/179485">Interpretable Machine Learning Identifies Electrophysiological Signatures of <i>SYNGAP1</i> Genotype and Conditioned Freezing</a></p>
+              <p><b>L.&nbsp;Soufizadeh&nbsp;Balaneji</b>, A.&nbsp;Onken, P.&nbsp;Rignanese</p>
+              <p class="meta"><i>Poster, Women in Machine Learning (WiML) affinity event at NeurIPS 2026</i></p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2026</span>
+            <div>
+              <p class="title"><a href="https://ai4bi-cdt.ed.ac.uk/sites/default/files/2026-06/Machine%20Learning-Based%20Neural%20Biomarkers%20of%20Freezing%20Behaviour%20-%20Lachin%20Soufizadeh.pdf">Machine Learning-Based Neural Biomarkers of Freezing Behaviour</a></p>
+              <p><b>L.&nbsp;Soufizadeh&nbsp;Balaneji</b>, A.&nbsp;Onken, T.&nbsp;Watson, P.&nbsp;Kind, P.&nbsp;Rignanese</p>
+              <p class="meta"><i>Poster, UKRI Machine Intelligence for Health Conference, May 2026</i></p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2023</span>
+            <div>
+              <p class="title">Methods for Diagnosing Major Depressive Disorder Using EEG Signals and Machine Learning</p>
+              <p>V.&nbsp;Sharghiyan&nbsp;Dizaji, Y.&nbsp;Sarbaz, <b>L.&nbsp;Soufizadeh</b>, M.&nbsp;Ariyani</p>
+              <p class="meta"><i>12th National Congress of Modern Technologies in the Field of Sustainable Development, Tehran</i></p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section wrap" id="background" aria-labelledby="background-title">
+      <h2 id="background-title">Background</h2>
+      <div class="section-body is-listing">
+        <h3>Education</h3>
+        <ol class="entries">
+          <li class="entry">
+            <span class="when">2025–</span>
+            <div>
+              <p class="title">PhD, AI for Biomedical Innovation</p>
+              <p class="meta">University of Edinburgh</p>
+              <p class="detail">UKRI-funded studentship in the AI4BI Centre for Doctoral Training, in partnership with the Simons Initiative for the Developing Brain.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2023–2025</span>
+            <div>
+              <p class="title">MSc, Biomedical Engineering (Bioelectrics)</p>
+              <p class="meta">University of Tabriz</p>
+              <p class="detail">Thesis: electroencephalogram signal analysis for depression detection using complex features.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2019–2023</span>
+            <div>
+              <p class="title">BSc, Biomedical Engineering</p>
+              <p class="meta">University of Tabriz</p>
+              <p class="detail">Ranked 3rd of 41 students.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3>Experience</h3>
+        <ol class="entries">
+          <li class="entry">
+            <span class="when">2024</span>
+            <div>
+              <p class="title">EEG data collection assistant</p>
+              <p class="meta">Modeling Biological Systems Lab, University of Tabriz</p>
+              <p class="detail">Recorded EEG from eight participants, preparing each one and checking signal quality.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2023</span>
+            <div>
+              <p class="title">Teaching assistant, Statics and Strength in Biomedical Engineering</p>
+              <p class="meta">University of Tabriz</p>
+              <p class="detail">Ran tutorials and graded exams for more than 45 students.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2022</span>
+            <div>
+              <p class="title">Biomedical engineering intern</p>
+              <p class="meta">Azarbaijan Hospital, Urmia</p>
+              <p class="detail">Maintained and troubleshot medical equipment, including EEG systems, and helped record EEG for patients recovering from stroke.</p>
+            </div>
+          </li>
+        </ol>
+
+        <h3>Outreach</h3>
+        <ol class="entries">
+          <li class="entry">
+            <span class="when">2026</span>
+            <div>
+              <p class="title">Brains in the Making: Shaping How We See Epilepsy</p>
+              <p class="meta">Brain Awareness Week, Castlebrae Community Campus</p>
+              <p class="detail">A workshop for secondary school pupils, run with Nikoo Moradi, where pupils built brain structures from Play-Doh while learning how the brain works and what happens in epilepsy. <a href="https://ai4bi-cdt.ed.ac.uk/cdt-impact/public-engagement">Read about the workshop</a></p>
+            </div>
+          </li>
+        </ol>
+
+        <h3>Awards</h3>
+        <ol class="entries">
+          <li class="entry">
+            <span class="when">2025</span>
+            <div><p>UKRI-funded PhD studentship, AI4BI Centre for Doctoral Training</p></div>
+          </li>
+          <li class="entry">
+            <span class="when">2023</span>
+            <div><p>Fully funded graduate admission through the Talented Student Office, University of Tabriz</p></div>
+          </li>
+          <li class="entry">
+            <span class="when">2019</span>
+            <div><p>Top 2% in Iran’s national university entrance exam (mathematics and physics)</p></div>
+          </li>
+        </ol>
+
+        <h3>Skills</h3>
+        <dl class="skills">
+          <dt>Signal processing</dt>
+          <dd>EEG and LFP preprocessing (filtering, artifact subspace reconstruction, ICA), time–frequency analysis, nonlinear dynamics, connectivity</dd>
+          <dt>Machine learning</dt>
+          <dd>Supervised classification, feature engineering and selection, cross-validation, interpretation with SHAP; Elastic Net, XGBoost, SVM, random forests, k-NN</dd>
+          <dt>Software</dt>
+          <dd>Python (NumPy, SciPy, pandas, scikit-learn, Matplotlib, MNE-Python, Optuna), MATLAB (EEGLAB, Brainstorm)</dd>
+          <dt>Languages</dt>
+          <dd>Azerbaijani and Persian (native), Turkish (fluent), English (IELTS 7.5)</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section wrap" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <div class="section-body">
+        <p>Email is the best way to reach me: <a href="mailto:s2858559@ed.ac.uk">s2858559@ed.ac.uk</a>. I’m also on <a href="https://www.linkedin.com/in/lachin-soufizadeh-bb8ab818a/">LinkedIn</a> and <a href="https://github.com/LachinSoufizadeh">GitHub</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>© 2026 Lachin Soufizadeh Balaneji. Last updated November 2026.</p>
+  </footer>
+</body>
+</html>
