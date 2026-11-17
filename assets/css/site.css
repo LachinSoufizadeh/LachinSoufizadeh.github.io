@@ -192,6 +192,12 @@ sup {
   display: block;
 }
 
+.pronouns {
+  margin: 0.9rem 0 0;
+  color: var(--ink-2);
+  font-size: 1rem;
+}
+
 .lead {
   max-width: 40ch;
   margin: 1.6rem 0 0;
