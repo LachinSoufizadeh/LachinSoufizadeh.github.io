@@ -2,7 +2,7 @@
    It is an illustration built from synthetic signals, not real data:
    each trace is a sum of band-limited oscillations (delta to gamma), so the
    "Frequency bands" view shows the exact components of the prefrontal trace.
-   During the freezing window, slow rhythms get stronger and fast ones weaker. */
+   The band mix changes inside the freezing window only so the two states look different. */
 (function () {
   "use strict";
 
@@ -45,7 +45,7 @@
     },
     bands: {
       label: "Illustration of the prefrontal trace split into five frequency bands, delta, theta, alpha, beta and gamma.",
-      caption: "The same illustration, with the prefrontal trace split into the five frequency bands I compute features from. Slow rhythms grow and fast ones fade inside the freezing window."
+      caption: "The same illustration, with the prefrontal trace split into the five frequency bands I compute features from."
     }
   };
 

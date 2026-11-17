@@ -55,6 +55,7 @@
     <nav class="site-nav wrap" aria-label="Sections">
       <ul>
         <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#background">Background</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -101,18 +102,32 @@
         <p>My PhD asks what that looks like in the brain. I work with EEG and local field potential (LFP) recordings from the medial prefrontal cortex, amygdala and olfactory bulb, made while rats go through fear conditioning. I turn the signals into features a model can learn from (spectral power, signal complexity and connectivity between regions), train interpretable classifiers, and use SHAP to see which regions, frequency bands and connections drive each prediction.</p>
         <p>The aim is not only a biomarker. I want to understand how the fear circuit is organised, and what changes in it when <i>SYNGAP1</i> is haploinsufficient.</p>
 
-        <h3>Findings so far</h3>
-        <ul class="findings">
-          <li>Freezing can be decoded from 5-second windows of brain activity, with 96% accuracy on held-out data in <i>Syngap</i><sup>+/Δ-GAP</sup> rats and 94% in wild-type rats.</li>
-          <li>Freezing looks different in the brain of each genotype. In wild-type rats the model draws on both oscillatory power and signal complexity, while in <i>Syngap</i><sup>+/Δ-GAP</sup> rats the strongest markers are complexity features, which suggests a weaker version of the usual oscillatory signature of freezing.</li>
-          <li>Genotype can be predicted for rats the model has never seen, with a balanced accuracy of 0.86 during habituation and 0.75 during fear recall.</li>
-        </ul>
-        <p class="source">From my posters at the <a href="https://ai4bi-cdt.ed.ac.uk/sites/default/files/2026-06/Machine%20Learning-Based%20Neural%20Biomarkers%20of%20Freezing%20Behaviour%20-%20Lachin%20Soufizadeh.pdf">Machine Intelligence for Health conference</a> and <a href="https://neurips.cc/virtual/2026/179485">WiML at NeurIPS 2026</a>.</p>
-
         <p>I’m supervised by <a href="https://sidb.org.uk/peter-kind/">Peter Kind</a>, <a href="https://sidb.org.uk/peter-kind/paul-rignanese/">Paul Rignanese</a> and Thomas Watson at the Simons Initiative for the Developing Brain, and <a href="https://homepages.inf.ed.ac.uk/aonken/">Arno Onken</a> in the School of Informatics.</p>
 
-        <h3>Before Edinburgh</h3>
-        <p>For my MSc at the University of Tabriz, supervised by Yashar Sarbaz and Saeed Meshgini, I built an EEG pipeline that tells people with major depressive disorder apart from healthy controls. It cleans the signal with artifact subspace reconstruction and ICA, then uses wavelet sub-band, entropy and fractal-dimension features. It reached up to 96.0% accuracy with eyes open and 94.3% with eyes closed under 10-fold cross-validation, with delta and gamma activity over channels O2 and P3 carrying the most information.</p>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+      <div class="section-body is-listing">
+        <ol class="entries">
+          <li class="entry">
+            <span class="when">2025–</span>
+            <div>
+              <p class="title">Rodent EEG machine-learning pipeline for fear conditioning</p>
+              <p class="meta">University of Edinburgh, Kind Lab</p>
+              <p class="detail">A Python pipeline that turns multi-session EEG and LFP recordings from wild-type and <i>Syngap</i><sup>+/Δ-GAP</sup> rats into a reproducible machine-learning dataset. It cuts the recordings into fixed-length epochs labelled as freezing or not freezing, extracts spectral, nonlinear and connectivity features in each frequency band, stores them with metadata for every animal, session and genotype, and trains Elastic Net models whose decisions are explained with SHAP.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2023–2025</span>
+            <div>
+              <p class="title">EEG-based detection of major depressive disorder (MSc thesis)</p>
+              <p class="meta">University of Tabriz, supervised by Yashar Sarbaz and Saeed Meshgini</p>
+              <p class="detail">An end-to-end pipeline that separates people with major depressive disorder from healthy controls using eyes-open and eyes-closed EEG from the Mumtaz depression dataset. It cleans the signal with band-pass and notch filtering, artifact subspace reconstruction and ICA, extracts wavelet sub-band, entropy and fractal-dimension features, selects the most informative ones statistically, and compares SVM, random forest and k-NN classifiers under 10-fold cross-validation.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -253,11 +268,19 @@
         <h3>Skills</h3>
         <dl class="skills">
           <dt>Signal processing</dt>
-          <dd>EEG and LFP preprocessing (filtering, artifact subspace reconstruction, ICA), time–frequency analysis, nonlinear dynamics, connectivity</dd>
+          <dd>EEG and LFP preprocessing (band-pass and notch filtering, artifact subspace reconstruction, ICA, removal of movement artefacts and seizure periods), epoching around behavioural labels, spectral and time–frequency analysis, wavelet decomposition</dd>
+          <dt>Neural features</dt>
+          <dd>Band power and power ratios; sample, permutation and spectral entropy; Higuchi, Katz and Petrosian fractal dimensions; Hjorth parameters; connectivity measures such as coherence, phase lag index, transfer entropy and cross-correlation</dd>
           <dt>Machine learning</dt>
-          <dd>Supervised classification, feature engineering and selection, cross-validation, interpretation with SHAP; Elastic Net, XGBoost, SVM, random forests, k-NN</dd>
+          <dd>Supervised classification of biomedical signals, feature engineering and selection, subject-level and nested cross-validation, hyperparameter tuning with Optuna, model interpretation with SHAP; Elastic Net, XGBoost, SVM, random forests, k-NN; brain⁠–⁠computer interface decoding from EEG and EMG</dd>
+          <dt>Neuroscience</dt>
+          <dd>Fear conditioning and freezing behaviour, rodent models of neurodevelopmental conditions, multi-region recordings from prefrontal cortex, amygdala and olfactory bulb, EEG in depression</dd>
           <dt>Software</dt>
-          <dd>Python (NumPy, SciPy, pandas, scikit-learn, Matplotlib, MNE-Python, Optuna), MATLAB (EEGLAB, Brainstorm)</dd>
+          <dd>Python (NumPy, SciPy, pandas, scikit-learn, XGBoost, SHAP, Optuna, MNE-Python, Matplotlib), MATLAB (EEGLAB, Brainstorm), Git and GitHub, reproducible datasets and pipelines</dd>
+          <dt>Lab and clinical</dt>
+          <dd>Recording EEG from human participants, from setup and preparation to signal-quality checks; maintaining and troubleshooting clinical EEG and other medical equipment</dd>
+          <dt>Communication</dt>
+          <dd>Conference posters, research talks, public engagement with school pupils and general audiences, tutoring undergraduates</dd>
           <dt>Languages</dt>
           <dd>Azerbaijani and Persian (native), Turkish (fluent), English (IELTS 7.5)</dd>
         </dl>
