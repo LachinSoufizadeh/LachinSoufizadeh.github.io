@@ -600,3 +600,15 @@ sup {
     background: #fff;
   }
 }
+
+/* Sits under the education list, aligned with the entry text rather than the years. */
+.section-body .courses {
+  margin: 1.15rem 0 0 6.5rem;
+  color: var(--ink-2);
+}
+
+@media (max-width: 40rem) {
+  .section-body .courses {
+    margin-left: 0;
+  }
+}

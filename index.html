@@ -102,6 +102,8 @@
         <p>My PhD asks what that looks like in the brain. I work with EEG and local field potential (LFP) recordings from the medial prefrontal cortex, amygdala and olfactory bulb, made while rats go through fear conditioning. I turn the signals into features a model can learn from (spectral power, signal complexity and connectivity between regions), train interpretable classifiers, and use SHAP to see which regions, frequency bands and connections drive each prediction.</p>
         <p>The aim is not only a biomarker. I want to understand how the fear circuit is organised, and what changes in it when <i>SYNGAP1</i> is haploinsufficient.</p>
 
+        <p>More broadly, I’m interested in machine learning for biomedical applications, signal processing, pattern recognition and translational neuroscience.</p>
+
         <p>I’m supervised by <a href="https://sidb.org.uk/peter-kind/">Peter Kind</a>, <a href="https://sidb.org.uk/peter-kind/paul-rignanese/">Paul Rignanese</a> and Thomas Watson at the Simons Initiative for the Developing Brain, and <a href="https://homepages.inf.ed.ac.uk/aonken/">Arno Onken</a> in the School of Informatics.</p>
 
       </div>
@@ -125,6 +127,22 @@
               <p class="title">EEG-based detection of major depressive disorder (MSc thesis)</p>
               <p class="meta">University of Tabriz, supervised by Yashar Sarbaz and Saeed Meshgini</p>
               <p class="detail">An end-to-end pipeline that separates people with major depressive disorder from healthy controls using eyes-open and eyes-closed EEG from the Mumtaz depression dataset. It cleans the signal with band-pass and notch filtering, artifact subspace reconstruction and ICA, extracts wavelet sub-band, entropy and fractal-dimension features, selects the most informative ones statistically, and compares SVM, random forest and k-NN classifiers under 10-fold cross-validation.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2024</span>
+            <div>
+              <p class="title">Generating synthetic EEG with Wasserstein GANs to improve classification</p>
+              <p class="meta">University of Tabriz, supervised by Masoud Geravanchizadeh</p>
+              <p class="detail">Adapted an open-source Wasserstein GAN with gradient penalty to EEG, trained it on preprocessed recordings from the BCI2000 dataset, and used the synthetic signals to augment training data for CNN, RNN and feed-forward classifiers. The generated EEG was checked against real recordings with the Fréchet Inception Distance and power spectral density.</p>
+            </div>
+          </li>
+          <li class="entry">
+            <span class="when">2023</span>
+            <div>
+              <p class="title">Detecting insomnia from sleep ECG</p>
+              <p class="meta">University of Tabriz, supervised by Saeed Meshgini</p>
+              <p class="detail">Segmented and filtered ECG from the CAP sleep database, extracted and normalised spectral heart-rate variability features, assessed sleep quality, and classified the sleep disorder with a decision tree.</p>
             </div>
           </li>
         </ol>
@@ -162,9 +180,9 @@
           <li class="entry">
             <span class="when">2023</span>
             <div>
-              <p class="title">Methods for Diagnosing Major Depressive Disorder Using EEG Signals and Machine Learning</p>
+              <p class="title"><a href="https://civilica.com/doc/1993740">Methods for Diagnosing Major Depressive Disorder Using EEG Signals and Machine Learning</a></p>
               <p>V.&nbsp;Sharghiyan&nbsp;Dizaji, Y.&nbsp;Sarbaz, <b>L.&nbsp;Soufizadeh</b>, M.&nbsp;Ariyani</p>
-              <p class="meta"><i>12th National Congress of Modern Technologies in the Field of Sustainable Development, Tehran</i></p>
+              <p class="meta"><i>12th National Congress of Modern Technologies in the Field of Sustainable Development, Tehran (in Persian)</i></p>
             </div>
           </li>
         </ol>
@@ -201,6 +219,7 @@
             </div>
           </li>
         </ol>
+        <p class="courses">Relevant courses at Tabriz included biomedical signal processing, digital signal processing, medical image processing and biological system modelling.</p>
 
         <h3>Experience</h3>
         <ol class="entries">
@@ -217,7 +236,7 @@
             <div>
               <p class="title">Teaching assistant, Statics and Strength in Biomedical Engineering</p>
               <p class="meta">University of Tabriz</p>
-              <p class="detail">Ran tutorials and graded exams for more than 45 students.</p>
+              <p class="detail">Gave lectures and review sessions to more than 45 students, graded exams and homework, and mentored students on research methods.</p>
             </div>
           </li>
           <li class="entry">
@@ -225,7 +244,7 @@
             <div>
               <p class="title">Biomedical engineering intern</p>
               <p class="meta">Azarbaijan Hospital, Urmia</p>
-              <p class="detail">Maintained and troubleshot medical equipment, including EEG systems, and helped record EEG for patients recovering from stroke.</p>
+              <p class="detail">Carried out maintenance, repairs and safety checks on medical equipment, including EEG machines, and helped prepare patients and record EEG for stroke recovery.</p>
             </div>
           </li>
         </ol>
@@ -273,11 +292,11 @@
         <h3>Skills</h3>
         <dl class="skills">
           <dt>Signal processing</dt>
-          <dd>EEG and LFP preprocessing, spectral and time–frequency analysis, nonlinear and connectivity features</dd>
+          <dd>EEG, LFP and ECG preprocessing, spectral and time–frequency analysis, nonlinear and connectivity features, heart-rate variability</dd>
           <dt>Machine learning</dt>
-          <dd>Interpretable classification of biomedical signals, cross-validation, SHAP, XGBoost, Elastic Net, SVM</dd>
+          <dd>Interpretable classification of biomedical signals, cross-validation, SHAP, XGBoost, Elastic Net, SVM, generative models (GANs), CNNs and RNNs</dd>
           <dt>Software</dt>
-          <dd>Python (NumPy, SciPy, pandas, scikit-learn, MNE-Python), MATLAB (EEGLAB, Brainstorm), Git</dd>
+          <dd>Python (NumPy, SciPy, pandas, scikit-learn, MNE-Python), MATLAB (EEGLAB, Brainstorm), PSpice, Git</dd>
           <dt>Languages</dt>
           <dd>Azerbaijani and Persian (native), Turkish (fluent), English (IELTS&nbsp;7.5)</dd>
         </dl>
